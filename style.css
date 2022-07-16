@@ -58,6 +58,12 @@
     margin-left: auto;
 }
 
+.fs-hr {
+    content: " ";
+    height: 1px;
+    background-color: rgb(235, 235, 240);
+}
+
 /* 
     HEADER 
 */
@@ -623,6 +629,10 @@
     height: 32px !important;
 }
 
+.footer .ft-1 .block .store-title {
+    margin-top: 24px;
+}
+
 .footer .block {
     width: 226px;
 }
@@ -635,6 +645,21 @@
     margin-bottom: 12px;
     margin-top: 0px;
 }
+
+
+
+.footer .ft-2 {
+    padding: 16px 0px;
+    background-color: rgb(255, 255, 255);
+}
+
+.footer .ft-2 .address {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+
 
 /* 
    END FOOTER
