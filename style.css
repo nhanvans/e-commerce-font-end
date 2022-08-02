@@ -4,7 +4,7 @@
     --fs-background: rgb(26, 148, 255);
     --fs-gray-color: rgb(120, 120, 120);
     --white: #fff;
-    --fs-background-wrapped: #efefef;
+    --fs-background-wrapped: rgb(245, 245, 250)/*#efefef*/;
     --fs-color-footer: rgb(128, 128, 137);
     --fs-color-title: rgb(56, 56, 61);
 }
@@ -22,6 +22,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+}
+
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
 }
 
 .btn {
@@ -63,6 +70,49 @@
     height: 1px;
     background-color: rgb(235, 235, 240);
 }
+
+/* 
+    BREADCRUMB
+*/
+
+    .breadcrumb-wrapper{
+        background-color: rgb(245, 245, 250);
+    }
+
+    .breadcrumb-wrapper .breadcrumb {
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+    }
+
+    .breadcrumb-wrapper .icon.icon-next {
+        margin-left: 5.5px;
+        margin-right: 8.5px;
+    }
+
+    .breadcrumb-wrapper a.breadcrumb-item {
+        position: relative;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        height: 40px;
+        color: var(--fs-color-footer);
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 300;
+        white-space: nowrap;
+
+        text-decoration: none;
+    }
+
+
+/* 
+    END BREADCRUMB
+*/
+
+
 
 /* 
     HEADER 
@@ -698,6 +748,130 @@
     padding: 16px 0px 0px;
 }
 
+.footer .ft-3 .ft-3-bl2 .content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 20px;
+}
+
+.footer .ft-3 .ft-3-bl2 .content>div .block {
+    margin-bottom: 16px;
+}
+
+.footer .ft-3 .ft-3-bl2 .content>div .block .heading {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: var(--fs-color-title);
+    margin-bottom: 4px;
+    margin-top: 0px;
+}
+
+.footer .ft-3 .ft-3-bl2 .content>div .block a {
+    color: var(--fs-color-footer);
+}
+
+.footer .ft-3 .ft-3-bl2 .content>div .block p {
+    margin: 0px;
+}
+
 /* 
    END FOOTER
+*/
+
+
+
+
+
+
+/* 
+   SEARCH
+*/
+
+.content-search-page {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.content-search-page .sidebar-search {
+    background: rgb(255, 255, 255);
+    width: 248px;
+    border-radius: 4px 0px 0px 4px;
+    overflow: hidden;
+}
+
+.content-search-page .right-content-search {
+    width: 991px;
+    border-radius: 0px 4px 4px 0px;
+}
+
+.content-search-page .right-content-search .search-summary {
+    padding: 0px;
+    background-color: rgb(255, 255, 255);
+}
+
+.content-search-page .right-content-search .search-summary .title {
+    padding: 16px 0px 0px 16px;
+}
+
+.content-search-page .right-content-search .search-summary .title h1{
+    display: inline;
+    font-weight: 300;
+    font-size: 24px !important;
+}
+
+.content-search-page .right-content-search 
+.search-summary .sorter {
+    clear: both;
+}
+
+.content-search-page .right-content-search 
+.search-summary .sorter .sorter-button {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(242, 242, 242);
+    padding: 16px 0px 0px;
+}
+
+.content-search-page .right-content-search 
+.search-summary .sorter .sorter-button .sorter-tabs {
+    margin-right: 10px;
+}
+
+.content-search-page .right-content-search 
+.search-summary .sorter .sorter-button .sorter-tabs .sort-list {
+    display: inline-block;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.sorter-tabs .sort-list a:hover, .sorter-tabs .sort-list a.active {
+    color: rgb(13, 92, 182);
+    font-weight: 500;
+    border-bottom: 4px solid rgb(13, 92, 182);
+}
+
+.sorter-tabs .sort-list a {
+    text-transform: capitalize;
+    cursor: pointer;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: normal;
+    color: rgb(36, 36, 36);
+    display: inline-block;
+    font-size: 13px;
+    margin: 0px 16px;
+    padding: 8px;
+    text-decoration: none;
+}
+
+
+/* 
+   END SEARCH
 */
